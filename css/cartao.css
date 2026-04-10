@@ -1,0 +1,213 @@
+.cartao {
+    /* Usamos um overlay semi-transparente para “clarear” o fundo */
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url(../images/cartaoFundo.jpeg);
+    background-size: cover;
+    background-position: center;
+    max-width: 1100px;
+    min-height: 350px;
+    margin: 20px auto;
+    border-radius: 30px;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.txt {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 250px;
+}
+
+.txt h1 {
+    font-size: 2.5rem;
+    color: #25718B;
+    margin: 0 0 20px 0;
+}
+
+.txt p {
+    font-size: 14px;
+    margin: 20px 0;
+    color: #25718B;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    display: inline-block;
+    width: 470px;
+}
+
+.txt button {
+    width: 110px;
+    height: 40px;
+    background-color: #25718B;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.txt button:hover {
+    background-color: rgba(0, 113, 139, 0.8);
+    transform: scale(1.05);
+}
+
+.mili {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.mili ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.mili li {
+    flex: 1 1 200px;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.mili li:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transform: translateY(-10px) scale(1.05);
+}
+
+.mili img {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.mili h1 {
+    font-size: 1rem;
+    color: #25718B;
+    margin: 0;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    color: #25718B;
+    font-size: 2rem;
+    margin: 40px 0 20px 0;
+}
+/* Responsivo */
+@media (max-width: 768px) {
+    .cartao {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .txt {
+        min-width: auto;
+    }
+
+    .txt p {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .txt h1 {
+        font-size: 2rem;
+    }
+    
+    .txt button {
+        margin: 20px auto 0 auto;
+        font-size: 0.8rem;
+    }
+
+
+.txt button:hover {
+    background-color: rgba(0, 113, 139, 0.4);
+    border: #25718B 2px solid;
+}
+
+    .mili {
+        padding: 10px;
+    }
+
+    .mili ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mili li {
+        flex: none;
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .mili img {
+        width: 60px;
+    }
+
+    .mili h1 {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cartao {
+        padding: 15px;
+    }
+
+    .txt {
+        text-align: center;
+    }
+
+    .txt h1 {
+        font-size: 1.8rem;
+    }
+
+    .txt p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cartao {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .txt h1 {
+        font-size: 1.4rem;
+    }
+
+    .txt p {
+        font-size: 11px;
+    }
+
+    .txt button {
+        width: 90px;
+        height: 35px;
+        font-size: 0.75rem;
+    }
+}

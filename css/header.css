@@ -1,0 +1,93 @@
+header {
+    width: 100%;
+}
+
+.cabecalho {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    margin: 0 3rem 0 3rem;
+}
+
+.logo img {
+    width: 130px;
+    height: 80px;
+}
+
+.nav {
+    width: auto;
+    flex: 1;
+}
+
+.nav ul {
+    display: flex;
+    padding: 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav a {
+    display: flex;
+    text-decoration: none;
+    color: #414141;
+    font-size: 1rem;
+}
+
+.nav a:hover {
+    color: #25718B;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo {
+        margin: 10px auto;
+    }
+
+    .logo img {
+        width: 90px;
+        height: 57px;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav ul {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .nav a {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo img {
+        width: 70px;
+        height: 45px;
+    }
+
+    .nav a {
+        font-size: 0.65rem;
+    }
+}
